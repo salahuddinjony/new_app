@@ -1,0 +1,250 @@
+{
+    "Data": [
+        {
+            "Name": "Build your own computer",
+            "ShortDescription": "Build it",
+            "FullDescription": "<p>Fight back against cluttered workspaces with the stylish IBM zBC12 All-in-One desktop PC, featuring powerful computing resources and a stunning 20.1-inch widescreen display with stunning XBRITE-HiColor LCD technology. The black IBM zBC12 has a built-in microphone and MOTION EYE camera with face-tracking technology that allows for easy communication with friends and family. And it has a built-in DVD burner and Sony's Movie Store software so you can create a digital entertainment library for personal viewing at your convenience. Easy to setup and even easier to use, this JS-series All-in-One includes an elegantly designed keyboard and a USB mouse.&nbsp;</p>",
+            "SeName": "build-your-own-computer",
+            "Sku": "COMP_CUST",
+            "ProductType": 5,
+            "MarkAsNew": true,
+            "ProductPrice": {
+                "OldPrice": null,
+                "OldPriceValue": null,
+                "Price": "$1,200.00",
+                "PriceValue": 1200.0000,
+                "BasePricePAngV": null,
+                "BasePricePAngVValue": 1200.0000,
+                "DisableBuyButton": false,
+                "DisableWishlistButton": false,
+                "DisableAddToCompareListButton": false,
+                "AvailableForPreOrder": false,
+                "PreOrderAvailabilityStartDateTimeUtc": null,
+                "IsRental": false,
+                "ForceRedirectionAfterAddingToCart": false,
+                "DisplayTaxShippingInfo": false,
+                "CurrencyCode": "USD",
+                "PriceWithDiscount": null,
+                "PriceWithDiscountValue": null,
+                "CustomerEntersPrice": false,
+                "CallForPrice": false,
+                "ProductId": 1,
+                "HidePrices": false,
+                "RentalPrice": null,
+                "RentalPriceValue": null,
+                "CustomProperties": {}
+            },
+            "PictureModels": [
+                {
+                    "ImageUrl": "https://test.nop-station.store/images/thumbs/0000020_build-your-own-computer_415.jpeg",
+                    "ThumbImageUrl": null,
+                    "FullSizeImageUrl": "https://test.nop-station.store/images/thumbs/0000020_build-your-own-computer.jpeg",
+                    "Title": "Show details for Build your own computer",
+                    "AlternateText": "Picture of Build your own computer",
+                    "Id": 0,
+                    "CustomProperties": {}
+                }
+            ],
+            "ProductSpecificationModel": {
+                "Groups": [],
+                "CustomProperties": {}
+            },
+            "ReviewOverviewModel": {
+                "ProductId": 1,
+                "RatingSum": 90,
+                "TotalReviews": 19,
+                "AllowCustomerReviews": true,
+                "CanAddNewReview": true,
+                "CanCurrentCustomerLeaveReview": false,
+                "CustomProperties": {}
+            },
+            "Id": 1,
+            "CustomProperties": {}
+        },
+        {
+            "Name": "Apple MacBook Pro",
+            "ShortDescription": "A groundbreaking Retina display. A new force-sensing trackpad. All-flash architecture. Powerful dual-core and quad-core Intel processors. Together, these features take the notebook to a new level of performance. And they will do the same for you in everything you create.",
+            "FullDescription": "<p>With fifth-generation Intel Core processors, the latest graphics, and faster flash storage, the incredibly advanced MacBook Pro with Retina display moves even further ahead in performance and battery life.* *Compared with the previous generation.</p>\r\n<p>Retina display with 2560-by-1600 resolution</p>\r\n<p>Fifth-generation dual-core Intel Core i5 processor</p>\r\n<p>Intel Iris Graphics</p>\r\n<p>Up to 9 hours of battery life1</p>\r\n<p>Faster flash storage2</p>\r\n<p>802.11ac Wi-Fi</p>\r\n<p>Two Thunderbolt 2 ports for connecting high-performance devices and transferring data at lightning speed</p>\r\n<p>Two USB 3 ports (compatible with USB 2 devices) and HDMI</p>\r\n<p>FaceTime HD camera</p>\r\n<p>Pages, Numbers, Keynote, iPhoto, iMovie, GarageBand included</p>\r\n<p>OS X, the world's most advanced desktop operating system</p>",
+            "SeName": "apple-macbook-pro",
+            "Sku": "APMBP13",
+            "ProductType": 5,
+            "MarkAsNew": false,
+            "ProductPrice": {
+                "OldPrice": null,
+                "OldPriceValue": null,
+                "Price": "$1,800.00",
+                "PriceValue": 1800.0000,
+                "BasePricePAngV": null,
+                "BasePricePAngVValue": 1800.0000,
+                "DisableBuyButton": false,
+                "DisableWishlistButton": false,
+                "DisableAddToCompareListButton": false,
+                "AvailableForPreOrder": false,
+                "PreOrderAvailabilityStartDateTimeUtc": null,
+                "IsRental": false,
+                "ForceRedirectionAfterAddingToCart": false,
+                "DisplayTaxShippingInfo": false,
+                "CurrencyCode": "USD",
+                "PriceWithDiscount": null,
+                "PriceWithDiscountValue": null,
+                "CustomerEntersPrice": false,
+                "CallForPrice": false,
+                "ProductId": 4,
+                "HidePrices": false,
+                "RentalPrice": null,
+                "RentalPriceValue": null,
+                "CustomProperties": {}
+            },
+            "PictureModels": [
+                {
+                    "ImageUrl": "https://test.nop-station.store/images/thumbs/0000024_apple-macbook-pro_415.jpeg",
+                    "ThumbImageUrl": null,
+                    "FullSizeImageUrl": "https://test.nop-station.store/images/thumbs/0000024_apple-macbook-pro.jpeg",
+                    "Title": "Show details for Apple MacBook Pro",
+                    "AlternateText": "Picture of Apple MacBook Pro",
+                    "Id": 0,
+                    "CustomProperties": {}
+                }
+            ],
+            "ProductSpecificationModel": {
+                "Groups": [],
+                "CustomProperties": {}
+            },
+            "ReviewOverviewModel": {
+                "ProductId": 4,
+                "RatingSum": 22,
+                "TotalReviews": 5,
+                "AllowCustomerReviews": true,
+                "CanAddNewReview": true,
+                "CanCurrentCustomerLeaveReview": false,
+                "CustomProperties": {}
+            },
+            "Id": 4,
+            "CustomProperties": {}
+        },
+        {
+            "Name": "HTC smartphone",
+            "ShortDescription": "HTC - One (M8) 4G LTE Cell Phone with 32GB Memory - Gunmetal (Sprint)",
+            "FullDescription": "<p><b>HTC One (M8) Cell Phone for Sprint:</b> With its brushed-metal design and wrap-around unibody frame, the HTC One (M8) is designed to fit beautifully in your hand. It's fun to use with amped up sound and a large Full HD touch screen, and intuitive gesture controls make it seem like your phone almost knows what you need before you do. <br /><br />Sprint Easy Pay option available in store.</p>",
+            "SeName": "htc-smartphone",
+            "Sku": "M8_HTC_5L",
+            "ProductType": 5,
+            "MarkAsNew": true,
+            "ProductPrice": {
+                "OldPrice": null,
+                "OldPriceValue": null,
+                "Price": "$245.00",
+                "PriceValue": 245.0000,
+                "BasePricePAngV": null,
+                "BasePricePAngVValue": 245.0000,
+                "DisableBuyButton": false,
+                "DisableWishlistButton": false,
+                "DisableAddToCompareListButton": false,
+                "AvailableForPreOrder": false,
+                "PreOrderAvailabilityStartDateTimeUtc": null,
+                "IsRental": false,
+                "ForceRedirectionAfterAddingToCart": false,
+                "DisplayTaxShippingInfo": false,
+                "CurrencyCode": "USD",
+                "PriceWithDiscount": null,
+                "PriceWithDiscountValue": null,
+                "CustomerEntersPrice": false,
+                "CallForPrice": false,
+                "ProductId": 18,
+                "HidePrices": false,
+                "RentalPrice": null,
+                "RentalPriceValue": null,
+                "CustomProperties": {}
+            },
+            "PictureModels": [
+                {
+                    "ImageUrl": "https://test.nop-station.store/images/thumbs/0000041_htc-smartphone_415.jpeg",
+                    "ThumbImageUrl": null,
+                    "FullSizeImageUrl": "https://test.nop-station.store/images/thumbs/0000041_htc-smartphone.jpeg",
+                    "Title": "Show details for HTC smartphone",
+                    "AlternateText": "Picture of HTC smartphone",
+                    "Id": 0,
+                    "CustomProperties": {}
+                }
+            ],
+            "ProductSpecificationModel": {
+                "Groups": [],
+                "CustomProperties": {}
+            },
+            "ReviewOverviewModel": {
+                "ProductId": 18,
+                "RatingSum": 0,
+                "TotalReviews": 0,
+                "AllowCustomerReviews": true,
+                "CanAddNewReview": true,
+                "CanCurrentCustomerLeaveReview": false,
+                "CustomProperties": {}
+            },
+            "Id": 18,
+            "CustomProperties": {}
+        },
+        {
+            "Name": "$25 Virtual Gift Card",
+            "ShortDescription": "$25 Gift Card. Gift Cards must be redeemed through our site Web site toward the purchase of eligible products.",
+            "FullDescription": "<p>Gift Cards must be redeemed through our site Web site toward the purchase of eligible products. Purchases are deducted from the GiftCard balance. Any unused balance will be placed in the recipient's GiftCard account when redeemed. If an order exceeds the amount of the GiftCard, the balance must be paid with a credit card or other available payment method.</p>",
+            "SeName": "25-virtual-gift-card",
+            "Sku": "VG_CR_025",
+            "ProductType": 5,
+            "MarkAsNew": false,
+            "ProductPrice": {
+                "OldPrice": null,
+                "OldPriceValue": null,
+                "Price": "$25.00",
+                "PriceValue": 25.0000,
+                "BasePricePAngV": null,
+                "BasePricePAngVValue": 25.0000,
+                "DisableBuyButton": false,
+                "DisableWishlistButton": false,
+                "DisableAddToCompareListButton": false,
+                "AvailableForPreOrder": false,
+                "PreOrderAvailabilityStartDateTimeUtc": null,
+                "IsRental": false,
+                "ForceRedirectionAfterAddingToCart": false,
+                "DisplayTaxShippingInfo": false,
+                "CurrencyCode": "USD",
+                "PriceWithDiscount": null,
+                "PriceWithDiscountValue": null,
+                "CustomerEntersPrice": false,
+                "CallForPrice": false,
+                "ProductId": 45,
+                "HidePrices": false,
+                "RentalPrice": null,
+                "RentalPriceValue": null,
+                "CustomProperties": {}
+            },
+            "PictureModels": [
+                {
+                    "ImageUrl": "https://test.nop-station.store/images/thumbs/0000076_25-virtual-gift-card_415.jpeg",
+                    "ThumbImageUrl": null,
+                    "FullSizeImageUrl": "https://test.nop-station.store/images/thumbs/0000076_25-virtual-gift-card.jpeg",
+                    "Title": "Show details for $25 Virtual Gift Card",
+                    "AlternateText": "Picture of $25 Virtual Gift Card",
+                    "Id": 0,
+                    "CustomProperties": {}
+                }
+            ],
+            "ProductSpecificationModel": {
+                "Groups": [],
+                "CustomProperties": {}
+            },
+            "ReviewOverviewModel": {
+                "ProductId": 45,
+                "RatingSum": 0,
+                "TotalReviews": 0,
+                "AllowCustomerReviews": true,
+                "CanAddNewReview": true,
+                "CanCurrentCustomerLeaveReview": false,
+                "CustomProperties": {}
+            },
+            "Id": 45,
+            "CustomProperties": {}
+        }
+    ],
+    "Message": null,
+    "ErrorList": []
+}
