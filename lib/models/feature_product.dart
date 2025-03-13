@@ -264,6 +264,12 @@ class ProductSpecificationModel {
     customProperties: CustomProperties.fromJson(json["CustomProperties"]),
   );
 
+  get pictureModels => null;
+
+  String? get name => null;
+
+  get productPrice => null;
+
   Map<String, dynamic> toJson() => {
     "Groups": List<dynamic>.from(groups.map((x) => x)),
     "CustomProperties": customProperties.toJson(),
