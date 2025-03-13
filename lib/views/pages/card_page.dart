@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:new_app/home_screen_controller.dart';
 import 'package:new_app/models/feature_product.dart';
 import 'package:new_app/services/apiResponse.dart';
+import 'package:new_app/views/pages/add_to_card_page.dart';
 
 class CardPage extends StatefulWidget {
   const CardPage({super.key});
@@ -11,7 +12,6 @@ class CardPage extends StatefulWidget {
 }
 
 class _CardPageState extends State<CardPage> {
-  
   late HomeScreenController _bloc;
 
   @override
@@ -24,7 +24,7 @@ class _CardPageState extends State<CardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-  appBar: AppBar(title: Text("Shoping Cards")),
+  appBar: AppBar(title: Text("Shopping Carts")),
   body: Padding(
     padding: const EdgeInsets.all(8.0),
     child: StreamBuilder<ApiResponse<FeatureProduct>>(
@@ -40,7 +40,7 @@ class _CardPageState extends State<CardPage> {
 
               return productList.isNotEmpty
                   ? SizedBox(
-                      height: 250, 
+                      height: 250,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: productList.length,
@@ -49,8 +49,9 @@ class _CardPageState extends State<CardPage> {
                           String imageUrl = product.pictureModels.isNotEmpty
                               ? product.pictureModels[0].imageUrl
                               : 'https://via.placeholder.com/150'; // Fallback image
-                          double rating = product.reviewOverviewModel.totalReviews > 0 
-                              ? product.reviewOverviewModel.ratingSum / product.reviewOverviewModel.totalReviews 
+                          double rating = product.reviewOverviewModel.totalReviews > 0
+                              ? product.reviewOverviewModel.ratingSum /
+                                  product.reviewOverviewModel.totalReviews
                               : 0.0;
 
                           return Container(
@@ -61,103 +62,102 @@ class _CardPageState extends State<CardPage> {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
-                              child: Stack(
+                              child: Column(
                                 children: [
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      // Product Image
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
-                                        child: Image.network(
-                                          imageUrl,
-                                          height: 120,
-                                          width: double.infinity,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            // Product Price
-                                            Text(
-                                              "QAR ${product.productPrice.price}",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 16,
-                                                color: Colors.teal,
-                                              ),
-                                            ),
-                                            SizedBox(height: 5),
-
-                                            // Product Name
-                                            Text(
-                                              product.name,
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.w600,
-                                                fontSize: 14,
-                                              ),
-                                              maxLines: 2,
-                                              overflow: TextOverflow.ellipsis,
-                                            ),
-                                            SizedBox(height: 5),
-
-                                            // Product Rating
-                                            Row(
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  size: 16,
-                                                  color: Colors.orange,
-                                                ),
-                                                SizedBox(width: 4),
-                                                Text(
-                                                  rating.toStringAsFixed(1),
-                                                  style: TextStyle(fontSize: 12),
-                                                ),
-                                              ],
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-
-                                  // New Badge
-                                  if (product.markAsNew)
-                                    Positioned(
-                                      top: 8,
-                                      left: 8,
-                                      child: Container(
-                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                        decoration: BoxDecoration(
-                                          color: Colors.brown,
-                                          borderRadius: BorderRadius.circular(8),
-                                        ),
-                                        child: Text(
-                                          "New",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12,
-                                          ),
-                                        ),
-                                      ),
+                                  // Product Image
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.vertical(
+                                      top: Radius.circular(12),
                                     ),
+                                    child: Image.network(
+                                      imageUrl,
+                                      height: 100, // Reduced height to prevent overflow
+                                      width: double.infinity,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween, // Distribute space
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          // Product Price
+                                          Text(
+                                            "QAR ${product.productPrice.price}",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16,
+                                              color: Colors.teal,
+                                            ),
+                                          ),
 
-                                  // Favorite Button (Heart)
-                                  Positioned(
-                                    top: 8,
-                                    right: 8,
-                                    child: IconButton(
-                                      icon: Icon(
-                                        Icons.favorite_border,
-                                        color: Colors.grey,
+                                          // Product Name
+                                          Text(
+                                            product.name,
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.w600,
+                                              fontSize: 14,
+                                            ),
+                                            maxLines: 2,
+                                            overflow: TextOverflow.ellipsis,
+                                          ),
+
+                                          // Product Rating
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.star,
+                                                size: 16,
+                                                color: Colors.orange,
+                                              ),
+                                              SizedBox(width: 4),
+                                              Text(
+                                                rating.toStringAsFixed(1),
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+
+                                          // Add to Cart Button (Prevents Overflow)
+                                          SizedBox(
+                                            width: double.infinity,
+                                            height: 40, // Set a fixed height
+                                            child: ElevatedButton(
+                                              onPressed: () {
+                                                // Handle add to cart action
+                                                 Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (context) {
+                                                      return AddToCartPage(
+                                                        productName: product.name, 
+                                                       productPrice: double.tryParse(product.productPrice.price) ?? 0.0,
+                                                        imageUrl: imageUrl,
+                                                      ); 
+                                                    },
+                                                  ),
+                                                );
+                                              },
+                                              style: ElevatedButton.styleFrom(
+                                                backgroundColor: Colors.teal,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius: BorderRadius.circular(8),
+                                                ),
+                                              ),
+                                              child: Text(
+                                                "Add to Cart",
+                                                style: TextStyle(color: Colors.white),
+                                                
+                                                ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
-                                      onPressed: () {
-                                        // Handle favorite action
-                                      },
                                     ),
                                   ),
                                 ],

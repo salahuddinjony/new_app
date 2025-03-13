@@ -13,6 +13,7 @@ class NavbarWidget extends StatelessWidget {
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
             NavigationDestination(icon: Icon(Icons.note), label: 'To do'),
             NavigationDestination(icon: Icon(Icons.card_giftcard), label: 'Cards'),
+            NavigationDestination(icon: Icon(Icons.shopping_bag), label: 'Shoping'),
             NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
           ],
           onDestinationSelected: (int value) {
